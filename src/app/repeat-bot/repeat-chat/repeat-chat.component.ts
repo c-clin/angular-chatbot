@@ -2,11 +2,11 @@ import { Message } from './../../message.model';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-chat',
-  templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css']
+  selector: 'app-repeat-chat',
+  templateUrl: './repeat-chat.component.html',
+  styleUrls: ['./repeat-chat.component.css']
 })
-export class ChatComponent implements OnInit {
+export class RepeatChatComponent implements OnInit {
   @Input() chat: Message;
   constructor() { }
 

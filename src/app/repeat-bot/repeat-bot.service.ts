@@ -1,7 +1,7 @@
-import { Message } from './message.model';
+import { Message } from './../message.model';
 import { Subject } from 'rxjs';
 
-export class ChatBotService {
+export class RepeatBotService {
     messagesChanged = new Subject<Message[]>();
     repeatText: string;
     private messages: Message[] = [

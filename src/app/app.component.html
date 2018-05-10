@@ -1,5 +1,11 @@
 <div class="container-fluid">
-  
-  <app-chatroom></app-chatroom>
-  <app-response-form></app-response-form>
+  <app-header></app-header>
+  <div class="row">
+    <div class="col-xs-5">
+      <app-navigation></app-navigation>
+    </div>
+    <div class="col-xs-7">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </div>
