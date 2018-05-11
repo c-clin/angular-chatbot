@@ -17,6 +17,8 @@ export class NavigationComponent implements OnInit {
   onNavigate(bot: string) {
     if (this.angularBots.indexOf(bot) === 0) {
       this.router.navigate(['/repeat-bot']);
+    } else if (this.angularBots.indexOf(bot) === 1) {
+      this.router.navigate(['/reverse-bot']);
     }
     console.log(bot);
   }

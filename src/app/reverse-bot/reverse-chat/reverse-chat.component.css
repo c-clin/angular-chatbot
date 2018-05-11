@@ -1,0 +1,32 @@
+.bot {
+    background-color: beige;
+    width: 300px;
+    float: left;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bot-img {
+     float: left; 
+     margin: 5px;
+}
+
+.user {
+    background-color:#74b9ff;
+    width: 300px;
+    float: right;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.user-img {
+    float: right;
+    margin: 5px;
+}
+
+ul {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+    list-style: none; 
+}

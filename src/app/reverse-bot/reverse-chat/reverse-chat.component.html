@@ -1,0 +1,15 @@
+<div #autoscroll style="overflow: scroll;">
+  <ul>
+      <img 
+        [ngClass]="{'bot-img': chat.id == 'bot', 'user-img': chat.id != 'bot' }"
+        [src]="chat.avatar" 
+        alt="avatar" 
+        style="width: 50px;">
+      <li [ngClass]="{'bot': chat.id == 'bot' , 'user': chat.id != 'bot' }">
+      <p>{{ chat.content }}</p> 
+      <br>
+      <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ chat.time | date: 'h:mm a' }}
+      </li>
+  </ul>
+  </div>
+

@@ -18,7 +18,7 @@ export class RepeatBotService {
         this.repeatText = responseText;
         setTimeout(() => {
             this.repeatBotResponse();
-        }, 1000);
+        }, 600);
     }
 
     repeatBotResponse() {

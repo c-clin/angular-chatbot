@@ -10,6 +10,9 @@ import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { RepeatChatComponent } from './repeat-bot/repeat-chat/repeat-chat.component';
 import { RepeatBotComponent } from './repeat-bot/repeat-bot.component';
+import { ReverseBotComponent } from './reverse-bot/reverse-bot.component';
+import { ReverseChatComponent } from './reverse-bot/reverse-chat/reverse-chat.component';
+import { ReverseBotService } from './reverse-bot/reverse-bot.service';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,16 @@ import { RepeatBotComponent } from './repeat-bot/repeat-bot.component';
     RepeatBotComponent,
     RepeatChatComponent,
     HeaderComponent,
-    NavigationComponent
+    NavigationComponent,
+    ReverseBotComponent,
+    ReverseChatComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule
   ],
-  providers: [RepeatBotService],
+  providers: [RepeatBotService, ReverseBotService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
