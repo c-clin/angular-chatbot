@@ -5,7 +5,7 @@ export class RepeatBotService {
     messagesChanged = new Subject<Message[]>();
     repeatText: string;
     private messages: Message[] = [
-        new Message('Hi, Im an angular chatbot!', new Date(), 'https://www.w3schools.com/w3css/img_avatar3.png')
+        new Message('Hi, I am Repeat Bot. I repeat whatever you say!', new Date(), 'https://www.w3schools.com/w3css/img_avatar3.png', 'bot')
     ];
 
     getMessages() {
@@ -13,7 +13,7 @@ export class RepeatBotService {
     }
 
     sendResponse(responseText: string) {
-        this.messages.push(new Message(responseText, new Date(), 'https://www.w3schools.com/howto/img_avatar2.png'));
+        this.messages.push(new Message(responseText, new Date(), 'https://www.w3schools.com/howto/img_avatar2.png', 'user'));
         this.messagesChanged.next(this.messages);
         this.repeatText = responseText;
         setTimeout(() => {
@@ -22,7 +22,7 @@ export class RepeatBotService {
     }
 
     repeatBotResponse() {
-        this.messages.push(new Message(this.repeatText, new Date(), 'https://www.w3schools.com/w3css/img_avatar3.png' ));
+        this.messages.push(new Message(this.repeatText, new Date(), 'https://www.w3schools.com/w3css/img_avatar3.png', 'bot' ));
     }
 
 }
