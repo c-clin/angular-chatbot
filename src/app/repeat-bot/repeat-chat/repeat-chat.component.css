@@ -24,9 +24,8 @@
     margin: 5px;
 }
 
-ul {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
-    list-style: none; 
+.single-chat {
+    background-color: #ccf2ff;
+    margin: 0;
+    padding: 10px;
 }

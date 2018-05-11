@@ -6,7 +6,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 @Component({
   selector: 'app-reverse-bot',
   templateUrl: './reverse-bot.component.html',
-  styles: ['./reverse-bot.component.css']
+  styleUrls: ['./reverse-bot.component.css']
 })
 export class ReverseBotComponent implements OnInit, OnDestroy {
   inputResponse: string;

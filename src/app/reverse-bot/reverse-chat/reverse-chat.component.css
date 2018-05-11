@@ -30,3 +30,9 @@ ul {
     margin-bottom: 0;
     list-style: none; 
 }
+
+.single-chat {
+    background-color: #ffe6ff;
+    margin: 0;
+    padding: 10px;
+}
