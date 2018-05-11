@@ -5,7 +5,7 @@ export class ReverseBotService {
     messagesChanged = new Subject<Message[]>();
     private messages: Message[] = [
         new Message(
-            'Hi, I am Reverse Bot and I reverse whatever you say!',
+            'Hey there, I am Reverse Bot and I reverse anything you say to me!',
             new Date(),
             'https://www.w3schools.com/w3images/avatar6.png',
             'bot')

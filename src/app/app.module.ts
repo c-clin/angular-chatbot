@@ -13,6 +13,9 @@ import { RepeatBotComponent } from './repeat-bot/repeat-bot.component';
 import { ReverseBotComponent } from './reverse-bot/reverse-bot.component';
 import { ReverseChatComponent } from './reverse-bot/reverse-chat/reverse-chat.component';
 import { ReverseBotService } from './reverse-bot/reverse-bot.service';
+import { WaitingBotComponent } from './waiting-bot/waiting-bot.component';
+import { WaitingBotService } from './waiting-bot/waiting-bot.service';
+import { WaitingChatComponent } from './waiting-bot/waiting-chat/waiting-chat.component';
 
 @NgModule({
   declarations: [
@@ -22,14 +25,16 @@ import { ReverseBotService } from './reverse-bot/reverse-bot.service';
     HeaderComponent,
     NavigationComponent,
     ReverseBotComponent,
-    ReverseChatComponent
+    ReverseChatComponent,
+    WaitingBotComponent,
+    WaitingChatComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
     FormsModule
   ],
-  providers: [RepeatBotService, ReverseBotService],
+  providers: [RepeatBotService, ReverseBotService, WaitingBotService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

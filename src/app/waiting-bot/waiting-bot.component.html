@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row" style="background-color: rgb(201, 247, 237); height: 100%; overflow-x: hidden;">
+    <h4 class="chat-title">
+      <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+      Chat - Waiting Bot
+    </h4>
+    <div class="col-xs-12" style="margin: 0;">
+      <!-- Chat messages -->
+      <ul>
+        <app-waiting-chat *ngFor="let message of messages; let i = index" [chat]="message"></app-waiting-chat>
+      </ul>
+    </div>
+    <!-- Response form -->
+    <div class="col-xs-12" style="padding-top: 20px; margin-bottom: 30px;">
+      <div class="input-group">
+        <input type="text" class="form-control" [(ngModel)]="inputResponse" (keydown.enter)="onSend()">
+        <span class="input-group-btn">
+          <button class="btn btn-success" type="button" (click)="onSend()">Send</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
