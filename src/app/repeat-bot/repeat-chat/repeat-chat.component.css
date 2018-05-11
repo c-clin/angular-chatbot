@@ -24,8 +24,7 @@
     margin: 5px;
 }
 
-.single-chat {
-    background-color: #ccf2ff;
-    margin: 0;
-    padding: 10px;
+li {
+    box-shadow: 2px 3px 4px #999;
+    margin-bottom: 10px;
 }

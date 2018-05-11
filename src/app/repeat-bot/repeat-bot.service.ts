@@ -5,7 +5,11 @@ export class RepeatBotService {
     messagesChanged = new Subject<Message[]>();
     repeatText: string;
     private messages: Message[] = [
-        new Message('Hi, I am Repeat Bot. I repeat whatever you say!', new Date(), 'https://www.w3schools.com/w3css/img_avatar3.png', 'bot')
+        new Message(
+            'Hi, I am Echo Bot and I am going to copy everything you say!',
+            new Date(),
+            'https://www.w3schools.com/w3css/img_avatar3.png',
+            'bot')
     ];
 
     getMessages() {

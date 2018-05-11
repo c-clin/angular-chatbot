@@ -1,5 +1,19 @@
 <ul class="list-group">
-  <div class="input-group col-xs-12" *ngFor="let bot of angularBots" (click)="onNavigate(bot)">
-    <li class="list-group-item" style="cursor: pointer;">{{ bot }}</li>
+  <div class="input-group col-xs-12">
+    <li 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{exact: true}"
+      class="list-group-item" 
+      style="cursor: pointer;" 
+      routerLink="/repeat-bot">
+      <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="echo bot avatar"> 
+      Echo Bot</li>
+    <li 
+      routerLinkActive="active"
+      class="list-group-item" 
+      style="cursor: pointer;" 
+      routerLink="/reverse-bot">
+      <img src="https://www.w3schools.com/w3images/avatar6.png" alt="reverse bot avatar">
+      Reverse Bot</li>
   </div>
 </ul>

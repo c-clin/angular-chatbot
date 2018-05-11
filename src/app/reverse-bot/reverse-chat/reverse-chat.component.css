@@ -24,15 +24,11 @@
     margin: 5px;
 }
 
-ul {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 0;
-    list-style: none; 
-}
 
-.single-chat {
-    background-color: #ffe6ff;
-    margin: 0;
-    padding: 10px;
+
+
+
+li {
+    box-shadow: 2px 3px 4px #999;
+    margin-bottom: 10px;
 }

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./navigation.component.css']
 })
 export class NavigationComponent implements OnInit {
-  angularBots = ['Repeat Bot', 'Reverse Bot'];
+  angularBots = ['Echo Bot', 'Reverse Bot'];
 
   constructor(private router: Router) { }
 

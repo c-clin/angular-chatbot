@@ -1,12 +1,14 @@
 <div class="container-fluid">
-  <div class="row" style="background-color: #ffe6ff">
+  <div class="row" style="background-color: #ffe6ff; height: 100%; overflow-x: hidden;">
     <h4 class="chat-title">
       <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
       Chat - Reverse Bot
     </h4>
-    <div class="col-xs-12">
+    <div class="col-xs-12" style="margin: 0;">
       <!-- Chat messages -->
+      <ul>
       <app-reverse-chat *ngFor="let message of messages; let i = index" [chat]="message"></app-reverse-chat>
+      </ul>
     </div>
     <!-- Response form -->
     <div class="col-xs-12" style="margin-top: 20px; margin-bottom: 30px;">
