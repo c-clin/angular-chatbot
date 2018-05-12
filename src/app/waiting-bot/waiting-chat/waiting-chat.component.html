@@ -1,4 +1,4 @@
-<div style="overflow: auto;">
+<div class="chat-box">
   <img [ngClass]="{'bot-img': chat.id == 'bot', 'user-img': chat.id != 'bot' }" [src]="chat.avatar" alt="avatar" style="width: 50px;">
   <li [ngClass]="{'bot': chat.id == 'bot' , 'user': chat.id != 'bot' }">
     <p>{{ chat.content }}</p>

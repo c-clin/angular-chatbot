@@ -7,7 +7,7 @@ export class WaitingBotService {
     private messages: Message[] = [
         new Message(
         // tslint:disable-next-line:quotemark
-        "Yo what's up! I am Waiting Bot. I will need some time to respond.. try typing '3'",
+        "Yo what's up! I am Waiting Bot. I will need some time to respond.. try giving me a number.",
         new Date(),
         'https://www.w3schools.com/w3images/avatar2.png',
         'bot')
@@ -30,7 +30,7 @@ export class WaitingBotService {
         if (this.waitingMessage.match(/^\d+|\d+\b|\d+(?=\w)/g)) {
             seconds = this.waitingMessage.match(/^\d+|\d+\b|\d+(?=\w)/g)[0];
             const msg = new Message(
-                'I just waited ' + seconds + ' seconds to send this to you.',
+                'I just waited ' + seconds + ' seconds to send you this.',
                 new Date(),
                 'https://www.w3schools.com/w3images/avatar2.png',
                 'bot');

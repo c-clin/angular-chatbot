@@ -11,4 +11,6 @@ ul {
     padding-right: 0;
     margin-bottom: 0;
     list-style: none; 
+    height: 60vh;
+    overflow-y: scroll;
 }

@@ -1,6 +1,6 @@
 .bot {
     background-color: beige;
-    width: 300px;
+    width: 250px;
     float: left;
     border-radius: 20px;
     padding: 20px;
@@ -13,7 +13,7 @@
 
 .user {
     background-color:#74b9ff;
-    width: 300px;
+    width: 250px;
     float: right;
     border-radius: 20px;
     padding: 20px;
@@ -28,3 +28,9 @@ li {
     box-shadow: 2px 3px 4px #999;
     margin-bottom: 10px;
 }
+
+.chat-box {
+    overflow-y: scroll;
+    font-size: 11px;
+}
+

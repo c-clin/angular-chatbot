@@ -28,3 +28,8 @@ li {
     box-shadow: 2px 3px 4px #999;
     margin-bottom: 10px;
 }
+
+.chat-box {
+    overflow-y: scroll;
+    font-size: 11px;
+}
