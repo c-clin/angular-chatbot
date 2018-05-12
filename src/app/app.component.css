@@ -1,0 +1,9 @@
+@media only screen and (max-width: 800px) {
+    .right-col {
+        width: 100%;
+    }
+
+    .left-col {
+        width: 100%;
+    }
+}
